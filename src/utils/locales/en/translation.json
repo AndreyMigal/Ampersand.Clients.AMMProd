@@ -1,0 +1,219 @@
+{
+  "header": {
+    "aboutUs": "ABOUT US",
+    "priceCalculator": "PRICE CALCULATOR",
+    "caseStudies": "CASE STUDIES",
+    "conacts": "CONTACTS",
+    "contactUs": "CONTACT US"
+  },
+  "contactModal": {
+    "title": "Let's talk about your project?",
+    "name": "Name*",
+    "namePlaceholder": "Enter your name",
+    "phoneNumber": "Phone number*",
+    "email": "Do you want to communicate by email?",
+    "emailPlaceholder": "Enter your email",
+    "btn": "Send",
+    "successTitle": "Your application has been sent!",
+    "description": "Our manager will contact you within 30 minutes during the agency's working hours",
+    "request": "If you have an urgent question - call us right now"
+  },
+  "title": {
+    "name": "AMM",
+    "title": "is a full-cycle video agency",
+    "subTitle": "We lead to the result: from an idea to promotion",
+    "mainBtn": "Discuss the Project",
+    "ribbonAd": "NOT THE FIRST, BUT THE ONLY ONES!"
+  },
+  "whoWeAre": {
+    "label": "Who are we?",
+    "title": "We are a video agency.",
+    "description": " We create content that will work efficiently and effectively for you 24/7.",
+    "reasonList": {
+      "firstItem": "We develop ideas and scenarios for future animation and video projects",
+      "secondItem":  "We create communication strategies",
+      "thirdItem": "We create animation and video products based on modern technology",
+      "fourthItem": "We use video marketing to the fullest and promote animated and video content through various communication channels",
+      "fifthItem": "We work with various business directions and unite partners from multiple industries"
+    }
+  },
+  "ourFeatures": {
+    "label": "Why not?",
+    "title": "Why choose us?",
+    "subTitle": "Jokes aside, you should choose us because we create effective content:",
+    "cards": {
+      "firstItem": {
+        "title": "We achieve results",
+        "descriptions": "We guide your project from the beginning until the end"
+      },
+      "secondItem": {
+        "title": "We adapt",
+        "descriptions": "We match a way to solve your problem according to your budget"
+      },
+      "thirdItem": {
+        "title": "A team of professionals",
+        "descriptions": "We unite numerous experts to achieve the goals of the project"
+      },
+      "fourthItem": {
+        "title": "We keep up with the times",
+        "descriptions": "We possess the skills to work with the entire scope of modern technology for the production of animation and video"
+      },
+      "fifthItem": {
+        "title": "We are not afraid of difficulties",
+        "descriptions": "We perform tasks of any complexity, direction and capacity"
+      },
+      "sixthItem": {
+        "title": "We stand out",
+        "descriptions": "We are down for collaborations and are not afraid of experiments"
+      }
+    }
+  },
+  "products": {
+    "title": "Our products",
+    "firstCard": {
+      "title": "What is your goal?",
+      "firstItem": "Videos to explain software features",
+      "secondItem": "Corporate and business video in order to gain the loyalty of customers and partners",
+      "thirdItem": "Videos for social networks for the purpose of promoting a product or service, or a company",
+      "fourthItem": "Increase conversion and sales through a video",
+      "fifthItem": "Viral video for the purpose of popularization",
+      "sixthItem": "Presentation of the product or services",
+      "seventhItem": "Educational video",
+      "eightItem": "Animated video for advertising purposes",
+      "ninthItem": "Video or animation for the purpose of brand formation"
+    },
+    "secondCard": {
+      "title": "What format do you prefer?",
+      "firstItem": "2D animated video",
+      "secondItem": "3D animated video",
+      "thirdItem": "Classic animation",
+      "fourthItem": "Explanatory cartoons",
+      "fifthItem": "Video infographics",
+      "sixthItem": "Motion design and animation graphics",
+      "seventhItem": "Character animation",
+      "eightItem": "Doodle-style videos animations and for whiteboards"
+    },
+    "thirdCard": {
+      "title": "What is your area of work?",
+      "firstItem": "Construction",
+      "secondItem": "Electronics",
+      "thirdItem": "Finance",
+      "fourthItem": "Food Industry",
+      "fifthItem": "Manufacturing",
+      "sixthItem": "IT and cryptocurrencies"
+    }
+  },
+  "calculator": {
+    "title": "Calculator",
+    "subTitle": "Choose a service of interest and we will estimate the cost of the product",
+    "video": "Video",
+    "animation": "Animation",
+    "form": "Form",
+    "formPlaceholderType": "Select a form...",
+    "formPlaceholderDuration": "Select a duration...",
+    "formPlaceholderOptions": "Select options...",
+    "type": "Type",
+    "duration": "Duration",
+    "options": "Important options",
+    "btn": "Calculate the price",
+    "disclaimerTitle": "is the estimated cost of your project.",
+    "disclaimer": "This is an estimated price according to the parameters you specified. In reality, the price can be higher or lower, depending on your needs. For an individual calculation, leave your contact details and our manager will contact you.",
+    "discussBtn": "Discuss the project",
+    "videoOption": {
+      "imageVideo": "Image video",
+      "advertisingVideo": "Advertising video",
+      "interviewsVideo" : "Interviews, reviews, reports",
+      "youtubeVideo": "YouTube",
+      "tiktokVideo": "Tik Tok"
+    },
+    "animationOption": {
+      "vector2dAnimation": "2D vector",
+      "perframe2dAnimation": "2D per frame",
+      "photorealistic3dAnimation": "3D photorealistic graphics",
+      "cartoon3dAnimation": "3D cartoon graphics",
+      "motion2dAnimation": "Motion design 2D",
+      "motion3dAnimation": "Motion design 3D"
+    },
+    "importantOptions": {
+      "scenario": "Idea + scenario",
+      "sound": "Voiceover",
+      "actors": "Selection of actors (license for an actor)",
+      "location": "Selection of locations and rent",
+      "makeUp": "Makeup artist + stylist",
+      "graphics": "Basic graphics", 
+      "advGraphics": "Complex graphics", 
+      "plan": "Creating a structural plan",
+      "mounting": "Basic installation",
+      "advMounting": "Installation is difficult",
+      "advFormat": "Advanced format with strategy, actors and complex production",
+      "simpleFormat": "A simple format of talking videos with several characters on the street or in the office",
+      "modeling": "Modeling"
+    }
+  },
+  "workProcess": {
+    "title": "Stages of work",
+    "someTitles": {
+      "one":"Production",
+      "two":"Post-production"
+    },
+    "first": {
+      "title": "Questionnaire",
+      "firstItem": "Interview",
+      "secondItem": "Briefing"
+    },
+    "second": {
+      "title": "Creative strategy",
+      "firstItem": "Video strategy",
+      "secondItem": "Formation of an idea",
+      "thirdItem": "Creation of a script",
+      "fifthItem": "Creation of a storyboard"
+    },
+    "third": {
+      "firstItem": "Filming",
+      "secondItem": "Creation of 2D illustrations",
+      "thirdItem": "Creation of 3D models"
+    },
+    "fourth": {
+      "firstItem": "Post-processing",
+      "secondItem": "Motion design",
+      "thirdItem": "Video editing",
+      "fourthItem": "Sound design",
+      "fifthItem": "2D and 3D animation",
+      "sixthItem": "Rendering"
+    }
+  },
+  "caseStudies": {
+    "title": "Case studies",
+    "description": "We chose the yummiest works from our portfolio. Would you like to see more?",
+    "link": "Click on the link",
+    "need": "Need:",
+    "result": "Result:",
+    "firstCard": {
+      "title": "2D explainer",
+      "need": "Create an explainer to break down the product into simple language and deliver value of the products, assessment to the customer.",
+      "result": "As a result, more credibility is established and the customer has fewer objections. After the creation of these products, managers communicated information using this video, and the customer perceived the value of the offer more easily."
+    },
+    "secondCard": {
+      "title": "3D animation",
+      "need": "The owner wanted to visually present the object to accelerate decision-making and sales even before the end of construction works.",
+      "result": "Sales increased by 40%. The video presentation stirred the interest of 80% of new potential buyers, 50% of whom made a decision to buy a home."
+    },
+    "thirdCard": {
+      "title": "3D-motion presentation",
+      "need": "To make a presentation video – a countdown of an architectural project of a hospital for investors in order to retain the attention and preserve the trust and investment of the company.",
+      "result": "100% positive feedback from customers and investors at a private screening."
+    }
+  },
+  "contactForm": {
+    "title": "Any more remaining questions?",
+    "description": "Send us your contact details and let us help you."
+  },
+  "clients": {
+    "title": "Clients",
+    "clutch": "Read on Clutch why clients prefer us"
+  },
+  "footer": {
+    "rights": "© 2022 AMM Production. All Rights Reserved." 
+  },
+  "error": "Invalid value"
+}
