@@ -1,0 +1,23 @@
+<svg id="Layer_8" data-name="Layer 8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #daa56d;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+      }
+
+      .cls-2 {
+        fill: #b47d3f;
+      }
+    </style>
+  </defs>
+  <title>FV_old_ForeARM_Right</title>
+  <polygon class="cls-1" points="219.81 1062.42 270.52 1026.53 350.87 1134.97 300.16 1173.19 219.81 1062.42"/>
+  <path class="cls-2" d="M353.31,1079l-.58.22c-13.29,6.06-28.76,3.39-37.42-7.45h0c-10.17-12.73-7.14-32,6.65-43.41l-3.85-4.93-47.59,3.12L351.65,1135l14-50.71-6.34-8.11A60.94,60.94,0,0,1,353.31,1079Z"/>
+</svg>

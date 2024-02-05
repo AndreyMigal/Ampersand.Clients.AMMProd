@@ -1,0 +1,34 @@
+<svg id="Layer_6" data-name="Layer 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b47d3f;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+      }
+
+      .cls-2 {
+        fill: #daa56d;
+      }
+
+      .cls-3 {
+        fill: #1e71ae;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <title>FV_old_LEG_Right</title>
+  <polygon class="cls-1" points="357.36 1390.84 546.46 1391.62 546.46 1294.43 357.36 1293.65 357.36 1390.84"/>
+  <polygon class="cls-2" points="316.33 1351.71 357.75 1390.41 358.55 1291.51 316.33 1252.8 316.33 1351.71"/>
+  <path class="cls-1" d="M506.05,1257.06c-3.82,13.45-22,22.34-42.76,20.25L448,1275.78c-17.84-1.8-32.2-11.17-36.55-22.62l-93.18-.4,41.84,38.74,184,.78Z"/>
+  <polygon class="cls-3" points="331.15 1301.91 357.67 1320.63 404.48 1320.63 403.7 1350.28 356.89 1351.06 331.15 1331.55 331.15 1301.91"/>
+  <line class="cls-4" x1="357.67" y1="1320.63" x2="357.81" y2="1356.36"/>
+</svg>

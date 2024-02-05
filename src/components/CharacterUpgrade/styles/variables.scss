@@ -1,0 +1,15 @@
+$color-black-primary: #131313;
+$color-black-light: #1d1d1d;
+$color-gray-primary: #535353;
+$color-gray-light: #D7D7D7;
+$color-white: #fff;
+$color-red-primary: #DC1515;
+$color-red-tomato: #A62D2D;
+$color-red-light: #C99C9C;
+
+$grid-width: 1170px;
+$grid-gap: 20px;
+
+@function grid-col($n) {
+	@return $n
+}

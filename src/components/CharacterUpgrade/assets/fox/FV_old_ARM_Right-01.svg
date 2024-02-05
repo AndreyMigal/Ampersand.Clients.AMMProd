@@ -1,0 +1,23 @@
+<svg id="Layer_9" data-name="Layer 9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b47d3f;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+      }
+
+      .cls-2 {
+        fill: #1e71ae;
+      }
+    </style>
+  </defs>
+  <title>FV_old_ARM_Right</title>
+  <path class="cls-1" d="M432.78,938.38s26.53,4.68,29.65,28.08c4.13,31-23.41,45.25-23.41,45.25l-98.29,24.18-3.12-18.72-21.84-6.24-1.56-14-10.15-11.7,27.31-15.61Z"/>
+  <polygon class="cls-2" points="360.23 961 361.79 985.18 432.78 964.9 432.78 938.38 360.23 961"/>
+</svg>
