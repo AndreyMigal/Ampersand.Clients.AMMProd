@@ -51,8 +51,8 @@ $body-width: 575px;
 		}
 
 		.MuiLinearProgress-root {
-			width: 575px;
 			height: 8px;
+			min-height: 8px;
 
 			background: $color-black-light;
 			border: 1px solid $color-gray-primary;
@@ -185,6 +185,79 @@ $body-width: 575px;
 			padding: 16px;
 			gap: 8px;
 			background: $color-black-light;
+		}
+	}
+}
+
+// RESPONSIVE
+
+@media screen and (max-width: 1170px) {
+	.character-upgrade {
+		padding: 0;
+		background: none;
+		height: 600px;
+		overflow: visible;
+
+		.header {
+			flex-direction: column;
+			gap: 12px;
+			align-items: stretch;
+
+			font-size: 18px;
+		}
+
+		.body {
+			gap: 0;
+
+			.character-container {
+				height: 300px;
+			}
+
+			.bubble {
+				font-size: 14px;
+				padding: 12px 12px 36px;
+			}
+
+			.items {
+				flex-grow: 0;
+				flex-shrink: 0;
+				min-width: 40px;
+			}
+
+			.item-thumb {
+				width: 40px;
+				height: 40px;
+
+				&.active {
+					background: $color-gray-light;
+				}
+			}
+		}
+
+		.item {
+			flex-shrink: 0;
+
+			.item-details {
+				gap: 4px;
+			}
+
+			.item-thumb {
+				width: 56px;
+				height: 56px;
+			}
+
+			p {
+				font-size: 14px;
+			}
+
+			button {
+				margin-top: 12px;
+				width: 96px;
+				font-size: 12px;
+				line-height: 16px;
+				flex-shrink: 0;
+				padding: 4px 12px;
+			}
 		}
 	}
 }

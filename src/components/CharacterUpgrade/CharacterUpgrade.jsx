@@ -4,7 +4,9 @@ import Item from "./components/Item/Item";
 import { useEffect, useState } from "react";
 import foxContent from "./helpers/foxContent";
 import { LinearProgress } from "@mui/material";
-import CheckIcon from '@mui/icons-material/Check';
+import { SCREEN_WIDTH } from "helpers/breakpoints";
+import ItemThumb from "./components/ItemThumb/ItemThumb";
+
 
 
 function CharacterUpgrade() {
@@ -55,10 +57,36 @@ function CharacterUpgrade() {
 		}
 	}
 
+	// Responsive
+
+	const [isMobile, setIsMobile] = useState(window.innerWidth < SCREEN_WIDTH.DESKTOP)
+
+	useEffect(() => {
+		function handleResize() {
+			setIsMobile(window.innerWidth < SCREEN_WIDTH.DESKTOP)
+		}
+
+		window.addEventListener('resize', handleResize);
+
+		return () => window.removeEventListener('resize', handleResize)
+	}, [])
+
+	const [activeItem, setActiveItem] = useState(foxContent.newItems[0])
+
+	function handleButtonOnCLick(item) {
+		applyItem(item)
+		const itemIndex = foxContent.newItems.findIndex(el => el.type === item.type)
+		if (
+			itemIndex + 1 < foxContent.newItems.length &&
+			!appliedItems.includes(item.type)
+		) setActiveItem(foxContent.newItems[itemIndex + 1])
+	}
+
 	// Layout
 
 	return (
 		<div className={'character-upgrade'}>
+
 			<div className="header">
 				<div className="checkbox-wrapper">
 					<Checkbox checked={!agencyUpgraded} onChange={handleCheckboxOnChange}>Агенція 1.0</Checkbox>
@@ -74,7 +102,20 @@ function CharacterUpgrade() {
 			<div className="body">
 				<div className="items">
 					{foxContent.newItems.filter((item, i) => i % 2 === 0).map((item, i) => (
-						<Item key={i} item={item} applied={appliedItems.includes(item.type)} onClick={() => applyItem(item)} />
+						isMobile ?
+							<ItemThumb
+								className={item.type === activeItem.type ? 'active' : ''}
+								key={i}
+								item={item}
+								applied={appliedItems.includes(item.type)}
+								onClick={() => setActiveItem(item)}
+							/> :
+							<Item
+								key={i}
+								item={item}
+								applied={appliedItems.includes(item.type)}
+								onClick={() => applyItem(item)}
+							/>
 					))}
 				</div>
 
@@ -86,7 +127,6 @@ function CharacterUpgrade() {
 							className={item.type + (i ? ' back' : '')}
 							alt="Fox"
 							draggable={false}
-
 						/>
 					)))}
 
@@ -97,10 +137,31 @@ function CharacterUpgrade() {
 
 				<div className="items">
 					{foxContent.newItems.filter((item, i) => i % 2 !== 0).map((item, i) => (
-						<Item key={i} item={item} applied={appliedItems.includes(item.type)} onClick={() => applyItem(item)} />
+						isMobile ?
+							<ItemThumb
+								className={item.type === activeItem.type ? 'active' : ''}
+								key={i}
+								item={item}
+								applied={appliedItems.includes(item.type)}
+								onClick={() => setActiveItem(item)}
+							/> :
+							<Item
+								key={i}
+								item={item}
+								applied={appliedItems.includes(item.type)}
+								onClick={() => applyItem(item)}
+							/>
 					))}
 				</div>
 			</div>
+
+			{isMobile && (
+				<Item
+					item={activeItem}
+					applied={appliedItems.includes(activeItem.type)}
+					action={() => handleButtonOnCLick(activeItem)}
+				/>
+			)}
 		</div>
 	);
 }

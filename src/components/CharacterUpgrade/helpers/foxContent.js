@@ -1,6 +1,6 @@
 import foxOld from '../assets/fox/Foxi_Vector_old-01.svg';
 import foxOldHelmetBack from '../assets/fox/FV_old_HELMET_back._1ai-01.svg';
-import foxOldHelmetFront from '../assets/fox/FV_old_HELMET_Front-01.svg';
+import foxOldHelmetFront from '../assets/fox/FV_old_HELMET_Front-01_fixed.svg';
 import foxOldBody from '../assets/fox/FV_old_Body-01.svg';
 import foxOldArmLeft from '../assets/fox/FV_old_ARM_Left-01.svg';
 import foxOldArmRight from '../assets/fox/FV_old_ARM_Right-01.svg';

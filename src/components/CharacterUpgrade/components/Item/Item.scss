@@ -2,16 +2,13 @@
 
 .item {
 	position: relative;
-	max-height: 112px;
 	overflow: hidden;
 
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: flex-start;
 	padding: 8px;
 	gap: 16px;
-
-	transition: max-height 0.2s linear;
 
 	cursor: pointer;
 	user-select: none;
@@ -37,11 +34,10 @@
 			font-size: 16px;
 			line-height: 22px;
 		}
-	}
 
-	button {
-		visibility: hidden;
-		opacity: 0;
+		button {
+			align-self: flex-start;
+		}
 	}
 
 	// States
@@ -67,99 +63,6 @@
 	&.applied:hover {
 		&::after {
 			background: $color-gray-light;
-		}
-	}
-
-	// Img
-
-	.item-img {
-		overflow: hidden;
-		position: relative;
-		flex-shrink: 0;
-		width: 64px;
-		height: 64px;
-		background: $color-gray-primary;
-
-		--cut-radius: 8px;
-		clip-path: polygon(var(--cut-radius) 0,
-				100% 0%,
-				100% calc(100% - var(--cut-radius)),
-				calc(100% - var(--cut-radius)) 100%,
-				0% 100%,
-				0% var(--cut-radius));
-
-		&::before {
-			content: '';
-			display: block;
-			position: absolute;
-			inset: 1px;
-			z-index: -2;
-			background: $color-black-light;
-			clip-path: polygon(var(--cut-radius) 0,
-					100% 0%,
-					100% calc(100% - var(--cut-radius)),
-					calc(100% - var(--cut-radius)) 100%,
-					0% 100%,
-					0% var(--cut-radius));
-		}
-
-		img {
-			position: absolute;
-			width: 120%;
-			left: -10%;
-			top: -25%;
-
-			&.helmet {
-				width: 120%;
-				left: -10%;
-				top: -25%;
-
-				&.back {
-					z-index: -1;
-				}
-			}
-
-			&.body {
-				width: 200%;
-				left: -50%;
-				top: -148%;
-			}
-
-			&.armLeft {
-				width: 300%;
-				left: -150%;
-				top: -230%;
-			}
-
-			&.armRight {
-				width: 300%;
-				left: -50%;
-				top: -230%;
-			}
-
-			&.forearmLeft {
-				width: 350%;
-				left: -210%;
-				top: -305%;
-			}
-
-			&.forearmRight {
-				width: 350%;
-				left: -40%;
-				top: -305%;
-			}
-
-			&.legLeft {
-				width: 250%;
-				left: -100%;
-				top: -250%;
-			}
-
-			&.legRight {
-				width: 250%;
-				left: -50%;
-				top: -250%;
-			}
 		}
 	}
 

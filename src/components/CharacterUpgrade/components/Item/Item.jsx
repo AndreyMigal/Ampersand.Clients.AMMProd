@@ -1,22 +1,19 @@
 import './Item.scss'
 import Button from '../Button/Button'
+import ItemThumb from '../ItemThumb/ItemThumb'
 
-export default function Item({ item, applied, ...props }) {
+export default function Item({ item, applied, action, ...props }) {
 	const classList = ["item"]
 	if (applied) classList.push("applied")
 
 	return (
 		<div className={classList.join(" ")} {...props}>
-			<div className="item-img obtained">
-				{item.imgs.map((img, i) => (
-					<img className={item.type + (i ? ' back' : '')} src={img} alt="Icon" draggable={false} />
-				))}
-			</div>
+			<ItemThumb item={item} />
 			<div className="item-details">
 				<h6>{'Upgrade #' + item.number}</h6>
 				<p>{item.text}</p>
+				{action && (<Button onClick={action}>{applied ? 'Застосовано' : 'Застосувати'}</Button>)}
 			</div>
-			{/* <Button>Застосувати</Button> */}
 		</div>
 	)
 }
