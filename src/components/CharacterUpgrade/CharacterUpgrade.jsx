@@ -6,13 +6,17 @@ import foxContent from "./helpers/foxContent";
 import { LinearProgress } from "@mui/material";
 import { SCREEN_WIDTH } from "helpers/breakpoints";
 import ItemThumb from "./components/ItemThumb/ItemThumb";
+import { useTranslation } from "react-i18next";
+import 'utils/i18next';
 
 
 
 function CharacterUpgrade() {
+	const { t } = useTranslation()
+
 	const [equipedItems, setEquipedItems] = useState(foxContent.oldItems)
 	const [appliedItems, setAppliedItems] = useState([])
-	const [bubbleMessage, setBubbleMessage] = useState(foxContent.initialPhrase)
+	const [bubbleMessage, setBubbleMessage] = useState(t(foxContent.initialPhrase))
 	const [agencyUpgraded, setAgencyUpgraded] = useState(false)
 
 	// Actions
@@ -20,13 +24,13 @@ function CharacterUpgrade() {
 	function start() {
 		setEquipedItems(foxContent.oldItems)
 		setAppliedItems([])
-		setBubbleMessage(foxContent.initialPhrase)
+		setBubbleMessage(t(foxContent.initialPhrase))
 		setAgencyUpgraded(false)
 	}
 
 	function finish() {
 		setEquipedItems([foxContent.newFoxBase, ...foxContent.newItems])
-		setBubbleMessage(foxContent.finalePhrase)
+		setBubbleMessage(t(foxContent.finalePhrase))
 		setAppliedItems(foxContent.newItems.map(el => el.type))
 		setAgencyUpgraded(true)
 	}
@@ -43,7 +47,7 @@ function CharacterUpgrade() {
 			else {
 				setEquipedItems(equipedItems.map(el => el.type === item.type ? item : el))
 				setAppliedItems([...appliedItems, item.type])
-				setBubbleMessage(foxContent.fillerPhrases[Math.floor(Math.random() * foxContent.fillerPhrases.length)])
+				setBubbleMessage(t(foxContent.fillerPhrases[Math.floor(Math.random() * foxContent.fillerPhrases.length)]))
 			}
 		}
 	}
@@ -57,7 +61,7 @@ function CharacterUpgrade() {
 		}
 	}
 
-	// Responsive
+	// Responsive features
 
 	const [isMobile, setIsMobile] = useState(window.innerWidth < SCREEN_WIDTH.DESKTOP)
 
@@ -89,13 +93,13 @@ function CharacterUpgrade() {
 
 			<div className="header">
 				<div className="checkbox-wrapper">
-					<Checkbox checked={!agencyUpgraded} onChange={handleCheckboxOnChange}>Агенція 1.0</Checkbox>
+					<Checkbox checked={!agencyUpgraded} onChange={handleCheckboxOnChange}>{t('characterUpgrade.agency')} 1.0</Checkbox>
 				</div>
 				<LinearProgress
 					variant="determinate"
 					value={100 / foxContent.newItems.length * appliedItems.length} />
 				<div className="checkbox-wrapper">
-					<Checkbox checked={agencyUpgraded} onChange={handleCheckboxOnChange}>Агенція 2.0</Checkbox>
+					<Checkbox checked={agencyUpgraded} onChange={handleCheckboxOnChange}>{t('characterUpgrade.agency')} 2.0</Checkbox>
 				</div>
 			</div>
 
