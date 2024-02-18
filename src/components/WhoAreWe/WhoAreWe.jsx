@@ -23,9 +23,9 @@ function WhoAreWe() {
     if (isTitleVisible) {
       setIsTitleShown(true)
     }
-    
+
   }, [isLabelVisible, isTitleVisible])
-  
+
   return (
     <div className={s.root} id='aboutUs'>
       <div className={s.desctopContainer}>
@@ -37,28 +37,27 @@ function WhoAreWe() {
         <div className={s.rightBlock}>
           <div className={classNames(s.title, { [s.titleAnimation]: isTitlelShown })} ref={titleRef}>
             {t('whoWeAre.title')}
-            <div>{t('whoWeAre.description')}</div> 
+            <div>{t('whoWeAre.description')}</div>
           </div>
           <ul className={s.reasonList}>
-            <li className={s.reasonItem}><StarIcon className={s.starIcon}/>{t('whoWeAre.reasonList.firstItem')}</li>
-            <li className={s.reasonItem}><StarIcon className={s.starIcon}/>{t('whoWeAre.reasonList.secondItem')}</li>
-            <li className={s.reasonItem}><StarIcon className={s.starIcon}/>{t('whoWeAre.reasonList.thirdItem')}</li>
-            <li className={s.reasonItem}><StarIcon className={s.starIcon}/>{t('whoWeAre.reasonList.fourthItem')}</li>
-            <li className={s.reasonItem}><StarIcon className={s.starIcon}/>{t('whoWeAre.reasonList.fifthItem')}</li>
+            <li className={s.reasonItem}><StarIcon className={s.starIcon} />{t('whoWeAre.reasonList.firstItem')}</li>
+            <li className={s.reasonItem}><StarIcon className={s.starIcon} />{t('whoWeAre.reasonList.secondItem')}</li>
+            <li className={s.reasonItem}><StarIcon className={s.starIcon} />{t('whoWeAre.reasonList.thirdItem')}</li>
+            <li className={s.reasonItem}><StarIcon className={s.starIcon} />{t('whoWeAre.reasonList.fourthItem')}</li>
+            <li className={s.reasonItem}><StarIcon className={s.starIcon} />{t('whoWeAre.reasonList.fifthItem')}</li>
           </ul>
         </div>
       </div>
       <div className={s.video} onClick={() => setIsVideoClicked(true)}>
         {isVideoClicked ?
-          <iframe src='https://www.youtube.com/embed/7gRb2xhB4Ik' className={s.preview} width={320} height={190} title='video' allowFullScreen></iframe>
+          <iframe src='https://www.youtube.com/embed/eeRd0drLd6Y?si=Q3HhcFJsvhorD3yZ' className={s.preview} width={320} height={190} title='video' allowFullScreen></iframe>
           :
-          <img className={s.preview} src='https://i.ytimg.com/vi/7gRb2xhB4Ik/maxresdefault.jpg' alt='video_preview'/>
+          <img className={s.preview} src='https://i3.ytimg.com/vi/eeRd0drLd6Y/maxresdefault.jpg' alt='video_preview' />
         }
-        {!isVideoClicked && <button type='button' className={s.videoBtn} aria-label='play'><PlayIcon/></button>}
+        {!isVideoClicked && <button type='button' className={s.videoBtn} aria-label='play'><PlayIcon /></button>}
       </div>
     </div>
   );
 }
 
 export default WhoAreWe;
-

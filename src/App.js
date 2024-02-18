@@ -3,6 +3,7 @@ import Loader from "./helpers/components/Loader/Loader";
 const Layout = lazy(() => import('./helpers/components/Layout/Layout'));
 const Header = lazy(() => import('./components/Header/Header'));
 const Hero = lazy(() => import('components/Hero/Hero'));
+const CharacterUpgrade = lazy(() => import('./components/CharacterUpgrade/CharacterUpgrade'));
 const WhoAreWe = lazy(() => import('components/WhoAreWe/WhoAreWe'));
 const Features = lazy(() => import('components/Features/Features'));
 const OurProducts = lazy(() => import('components/OurProducts/OurProducts'));
@@ -16,22 +17,23 @@ const Footer = lazy(() => import('components/Footer/Footer'));
 function App() {
 
   return (
-    <Suspense fallback={<Loader/>}>
+    <Suspense fallback={<Loader />}>
       <Layout>
-        <Header/>
-        <Hero/>
-        <WhoAreWe/>
-        <Features/>
+        <Header />
+        <Hero />
+        <CharacterUpgrade />
+        <WhoAreWe />
+        <Features />
       </Layout>
-      <OurProducts/>
+      <OurProducts />
       <Layout>
-        <Calculator/>
-        <WorkProcess/>
-        <Case/>
-        <ContactForm/>
-        <Clients/>
+        <Calculator />
+        <WorkProcess />
+        <Case />
+        <ContactForm />
+        <Clients />
       </Layout>
-      <Footer/>
+      <Footer />
     </Suspense>
   );
 }

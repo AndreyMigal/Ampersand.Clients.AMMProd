@@ -1,0 +1,30 @@
+<svg id="Layer_7" data-name="Layer 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b47d3f;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+      }
+
+      .cls-2 {
+        fill: #8c4b1d;
+      }
+
+      .cls-3 {
+        fill: #1e71ae;
+      }
+    </style>
+  </defs>
+  <title>FV_old_LEG_Left</title>
+  <polygon class="cls-1" points="744.16 1390.06 555.06 1390.84 555.06 1293.65 744.16 1292.88 744.16 1390.06"/>
+  <polygon class="cls-2" points="785.19 1350.93 743.76 1389.63 742.97 1290.72 785.19 1252.02 785.19 1350.93"/>
+  <path class="cls-1" d="M690.16,1252.38c-3.94,11.47-17.65,21.37-35.15,24.09l-15.16,2.36c-22.28,3.45-42.25-6-44.6-21.22l-.17-1-37.65,34.86,184-.78L783.22,1252Z"/>
+  <polygon class="cls-3" points="555.57 1316.82 583.92 1316.73 585.48 1347.15 555.84 1347.93 555.57 1316.82"/>
+  <polygon class="cls-3" points="785.86 1279.11 767.25 1297.23 767.25 1326.09 785.86 1312.41 785.86 1279.11"/>
+</svg>

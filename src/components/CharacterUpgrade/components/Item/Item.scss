@@ -1,0 +1,107 @@
+@import '../../styles/variables.scss';
+
+.item {
+	position: relative;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 8px;
+	gap: 16px;
+
+	cursor: pointer;
+	user-select: none;
+
+	.item-details {
+		flex: 1;
+		min-width: 0;
+
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		align-self: stretch;
+
+		h6 {
+			font-family: 'Furore';
+			font-size: 10px;
+			line-height: 12px;
+			letter-spacing: 1.5px;
+			color: $color-gray-primary;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 22px;
+		}
+
+		button {
+			align-self: flex-start;
+		}
+	}
+
+	// States
+
+	&:hover {
+		background: $color-gray-light;
+
+		&::before {
+			background: $color-black-light;
+		}
+	}
+
+	&.applied {
+		&::before {
+			background: $color-black-light;
+		}
+
+		&::after {
+			background: $color-gray-light;
+		}
+	}
+
+	&.applied:hover {
+		&::after {
+			background: $color-gray-light;
+		}
+	}
+
+	// Border
+
+	background: $color-gray-primary;
+	--cut-radius: 12px;
+	clip-path: polygon(var(--cut-radius) 0,
+		100% 0%,
+		100% calc(100% - var(--cut-radius)),
+		calc(100% - var(--cut-radius)) 100%,
+		0% 100%,
+		0% var(--cut-radius));
+
+	&::before {
+		z-index: -1;
+		content: '';
+		display: block;
+		position: absolute;
+		inset: 1px;
+		background: $color-black-primary;
+		clip-path: polygon(var(--cut-radius) 0,
+				100% 0%,
+				100% calc(100% - var(--cut-radius)),
+				calc(100% - var(--cut-radius)) 100%,
+				0% 100%,
+				0% var(--cut-radius));
+	}
+
+	// Check
+
+	&::after {
+		content: '';
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		width: 8px;
+		height: 8px;
+		border-radius: 1px;
+		display: block;
+	}
+}

@@ -1,0 +1,67 @@
+@import "../../styles/variables.scss";
+
+.checkbox {
+	margin: -8px;
+	padding: 8px;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 12px;
+
+	color: $color-gray-primary;
+
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+
+	.box {
+		position: relative;
+		height: 24px;
+		width: 24px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		// background: $color-black-primary;
+		border: 1px solid $color-gray-primary;
+	}
+
+	.box::before {
+		content: '';
+		width: 12px;
+		height: 12px;
+		display: none;
+		background: $color-white;
+	}
+}
+
+
+
+// States
+.checkbox:hover {
+	color: $color-white;
+
+	.box {
+		border-color: $color-white;
+	}
+}
+
+.checkbox input:checked+.box::before {
+	display: block;
+}
+
+.checkbox:has(input:checked) {
+	color: $color-white;
+}

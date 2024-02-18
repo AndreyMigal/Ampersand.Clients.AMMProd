@@ -4,7 +4,9 @@
     "priceCalculator": "PRICE CALCULATOR",
     "caseStudies": "CASE STUDIES",
     "conacts": "CONTACTS",
-    "contactUs": "CONTACT US"
+    "contactUs": "CONTACT US",
+    "title": "AMM/ video agency v.2.0",
+    "description": "We are a video agency. We create content that will work efficiently and effectively for you 24/7."  
   },
   "contactModal": {
     "title": "Let's talk about your project?",
@@ -20,10 +22,26 @@
   },
   "title": {
     "name": "AMM",
-    "title": "is a full-cycle video agency",
-    "subTitle": "We lead to the result: from an idea to promotion",
+    "title": "is a Video Agency type 2.0",
+    "subTitle": "We create effective and technological video tools to achieve business goals",
     "mainBtn": "Discuss the Project",
     "ribbonAd": "NOT THE FIRST, BUT THE ONLY ONES!"
+  },
+  "characterUpgrade": {
+    "agency": "Agency",
+    "initialPhrase": "This is a video and it's good :`)",
+    "finalePhrase": "It's not just a video, it's a tool aimed to achieve a result!",
+    "fillerPhrases": [ "Wow!", "Really?!", "No way!", "Was that even possible?!", "Whoa!", "Incredible!", "Amazing!" ],
+    "items": [
+      "Analyzing video trends",
+      "Adapting to various formats",
+      "Analyzing the video result after creation together with you",
+      "Selecting specific tools to achieve business goals",
+      "Inventing our own video worlds",
+      "Forming an individual product and solution",
+      "Supporting the client at every stage and after and before the collaboration begins",
+      "Comprehensively resolving content creation issues"
+    ]
   },
   "whoWeAre": {
     "label": "Who are we?",
@@ -31,7 +49,7 @@
     "description": " We create content that will work efficiently and effectively for you 24/7.",
     "reasonList": {
       "firstItem": "We develop ideas and scenarios for future animation and video projects",
-      "secondItem":  "We create communication strategies",
+      "secondItem": "We create communication strategies",
       "thirdItem": "We create animation and video products based on modern technology",
       "fourthItem": "We use video marketing to the fullest and promote animated and video content through various communication channels",
       "fifthItem": "We work with various business directions and unite partners from multiple industries"
@@ -100,7 +118,9 @@
       "thirdItem": "Finance",
       "fourthItem": "Food Industry",
       "fifthItem": "Manufacturing",
-      "sixthItem": "IT and cryptocurrencies"
+      "sixthItem": "IT and cryptocurrencies",
+      "seventhItem": "Production and engineering",
+      "eightItem": "Medicine"
     }
   },
   "calculator": {
@@ -122,7 +142,7 @@
     "videoOption": {
       "imageVideo": "Image video",
       "advertisingVideo": "Advertising video",
-      "interviewsVideo" : "Interviews, reviews, reports",
+      "interviewsVideo": "Interviews, reviews, reports",
       "youtubeVideo": "YouTube",
       "tiktokVideo": "Tik Tok"
     },
@@ -140,8 +160,8 @@
       "actors": "Selection of actors (license for an actor)",
       "location": "Selection of locations and rent",
       "makeUp": "Makeup artist + stylist",
-      "graphics": "Basic graphics", 
-      "advGraphics": "Complex graphics", 
+      "graphics": "Basic graphics",
+      "advGraphics": "Complex graphics",
       "plan": "Creating a structural plan",
       "mounting": "Basic installation",
       "advMounting": "Installation is difficult",
@@ -153,8 +173,8 @@
   "workProcess": {
     "title": "Stages of work",
     "someTitles": {
-      "one":"Production",
-      "two":"Post-production"
+      "one": "Production",
+      "two": "Post-production"
     },
     "first": {
       "title": "Questionnaire",
@@ -213,7 +233,7 @@
     "clutch": "Read on Clutch why clients prefer us"
   },
   "footer": {
-    "rights": "© 2022 AMM Production. All Rights Reserved." 
+    "rights": "© 2022 AMM Production. All Rights Reserved."
   },
   "error": "Invalid value"
 }
