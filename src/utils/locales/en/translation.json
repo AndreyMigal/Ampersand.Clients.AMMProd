@@ -6,7 +6,7 @@
     "conacts": "CONTACTS",
     "contactUs": "CONTACT US",
     "title": "AMM/ video agency v.2.0",
-    "description": "We are a video agency. We create content that will work efficiently and effectively for you 24/7."  
+    "description": "We are a video agency. We create content that will work efficiently and effectively for you 24/7."
   },
   "contactModal": {
     "title": "Let's talk about your project?",
@@ -41,7 +41,11 @@
       "Forming an individual product and solution",
       "Supporting the client at every stage and after and before the collaboration begins",
       "Comprehensively resolving content creation issues"
-    ]
+    ],
+    "actionButton": {
+      "default": "Apply",
+      "applied": "Applied"
+    }
   },
   "whoWeAre": {
     "label": "Who are we?",
