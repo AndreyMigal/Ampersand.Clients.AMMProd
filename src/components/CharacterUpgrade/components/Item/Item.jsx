@@ -16,7 +16,11 @@ export default function Item({ item, applied, action, ...props }) {
 			<div className="item-details">
 				<h6>{'Upgrade #' + item.number}</h6>
 				<p>{t(item.text)}</p>
-				{action && (<Button onClick={action}>{applied ? 'Застосовано' : 'Застосувати'}</Button>)}
+				{action && (<Button onClick={action}>{
+					applied ?
+						t("characterUpgrade.actionButton.applied") :
+						t("characterUpgrade.actionButton.default")
+				}</Button>)}
 			</div>
 		</div>
 	)
