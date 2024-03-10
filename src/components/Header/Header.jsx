@@ -20,6 +20,9 @@ function Header() {
     const handleChangeLanguage = (lang) => {
         i18n.changeLanguage(lang);
         setCurrentLang(lang);
+        i18n.on('languageChanged', () => {
+
+        })
     }
 
     const [isModalOpen, setIsModalOpen] = useState(false);

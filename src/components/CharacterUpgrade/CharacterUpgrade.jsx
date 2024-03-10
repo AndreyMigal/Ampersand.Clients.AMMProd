@@ -10,10 +10,10 @@ import { useTranslation } from "react-i18next";
 import 'utils/i18next';
 
 
-
 function CharacterUpgrade() {
-	const { t } = useTranslation()
-
+	const { t, i18n } = useTranslation()
+	
+	var lastBubble;
 	const [equipedItems, setEquipedItems] = useState(foxContent.oldItems)
 	const [appliedItems, setAppliedItems] = useState([])
 	const [bubbleMessage, setBubbleMessage] = useState(t(foxContent.initialPhrase))
@@ -35,6 +35,11 @@ function CharacterUpgrade() {
 		setAgencyUpgraded(true)
 	}
 
+	i18n.on('languageChanged', () => {
+		if (lastBubble)
+			setBubbleMessage(t(lastBubble))
+	});
+
 	function applyItem(item) {
 		if (appliedItems.includes(item.type)) {
 			if (appliedItems.length >= foxContent.newItems.length) setAgencyUpgraded(false)
@@ -47,7 +52,8 @@ function CharacterUpgrade() {
 			else {
 				setEquipedItems(equipedItems.map(el => el.type === item.type ? item : el))
 				setAppliedItems([...appliedItems, item.type])
-				setBubbleMessage(t(foxContent.fillerPhrases[Math.floor(Math.random() * foxContent.fillerPhrases.length)]))
+				lastBubble = foxContent.fillerPhrases[Math.floor(Math.random() * foxContent.fillerPhrases.length)];
+				setBubbleMessage(t(lastBubble))
 			}
 		}
 	}
