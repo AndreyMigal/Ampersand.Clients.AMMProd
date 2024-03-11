@@ -24,6 +24,7 @@ function CharacterUpgrade() {
 	function start() {
 		setEquipedItems(foxContent.oldItems)
 		setAppliedItems([])
+		lastBubble = foxContent.initialPhrase;
 		setBubbleMessage(t(foxContent.initialPhrase))
 		setAgencyUpgraded(false)
 	}
