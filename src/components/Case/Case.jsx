@@ -15,6 +15,7 @@ function Case() {
   const [isVideoClicked, setIsVideoClicked] = useState(false)
   const [isSecondVideoClicked, setIsSecondVideoClicked] = useState(false)
   const [isThirdVideoClicked, setIsThirdVideoClicked] = useState(false)
+  const [isFourthVideoClicked, setIsFourthVideoClicked] = useState(false)
   const { ref: descriptionRef, inView: isDescriptionVisible } = useInView();
   const { ref: titleRef, inView: isTitleVisible } = useInView();
   const [isDescriptionShown, setIsDescriptionShown] = useState(false);
@@ -88,6 +89,23 @@ function Case() {
           <div className={s.text}>{t('caseStudies.thirdCard.result')}</div>
         </div>
       </div>
+          <div className={s.card}>
+              <div className={s.video} onClick={() => setIsFourthVideoClicked(true)}>
+                  {isFourthVideoClicked ?
+                      <iframe src=' https://www.youtube.com/embed/XT4jRiyFLoc' className={s.preview} width={320} height={190} title='video' allowFullScreen></iframe>
+                      :
+                      <img className={s.preview} src='https://i.ytimg.com/vi/XT4jRiyFLoc/hqdefault.jpg' alt='video_preview' />
+                  }
+                  {!isFourthVideoClicked && <button type='button' className={s.videoBtn} aria-label='play'><PlayIcon /></button>}
+              </div>
+              <div>
+                  <h3 className={s.cardsTitle}>{t('caseStudies.fourthCard.title')}</h3>
+                  <div className={s.subTitle}>{t('caseStudies.need')}</div>
+                  <div className={s.text}>{t('caseStudies.fourthCard.need')}</div>
+                  <div className={s.subTitle}>{t('caseStudies.result')}</div>
+                  <div className={s.text}>{t('caseStudies.fourthCard.result')}</div>
+              </div>
+          </div>
     </div>
   );
 }
