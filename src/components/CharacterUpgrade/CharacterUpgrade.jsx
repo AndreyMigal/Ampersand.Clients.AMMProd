@@ -13,7 +13,7 @@ import 'utils/i18next';
 function CharacterUpgrade() {
 	const { t, i18n } = useTranslation()
 	
-	var lastBubble;
+	var lastBubble = foxContent.initialPhrase;
 	const [equipedItems, setEquipedItems] = useState(foxContent.oldItems)
 	const [appliedItems, setAppliedItems] = useState([])
 	const [bubbleMessage, setBubbleMessage] = useState(t(foxContent.initialPhrase))
@@ -25,7 +25,7 @@ function CharacterUpgrade() {
 		setEquipedItems(foxContent.oldItems)
 		setAppliedItems([])
 		lastBubble = foxContent.initialPhrase;
-		setBubbleMessage(t(foxContent.initialPhrase))
+		setBubbleMessage(t(lastBubble))
 		setAgencyUpgraded(false)
 	}
 
