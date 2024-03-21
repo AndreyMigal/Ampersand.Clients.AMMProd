@@ -29,20 +29,33 @@ function Modal({isModalOpen, setIsModalOpen}) {
   const handleSubmitClick = (e) => {
     e.preventDefault();
     setIsDirty(true);
-    if (isNameValid && isPhoneValid) {
-      const formData = new FormData(myForm.current);
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-      })
-        .then(() => {
-          console.log("Form successfully submitted");
-          setIsSubmited(true);
-          setIsDirty(false);
-        })
-        .catch((error) => alert(error));
-    }
+      if (isNameValid && isPhoneValid) {
+          const formData = {
+              fullname: name,
+              phone: phone,
+              email: email
+          };
+          const encoded = encodeURI('https://api.ampersand-it.com/public/contactus/amm/amm.prod1@gmail.com');
+          fetch(encoded, {
+              method: "POST",
+              headers: {
+                  "Content-Type": "application/json",
+                  "Client-Id": "amm_prod_client",
+                  "Client-Secret": "vsKxWYBjifROzMDc1Y2zDEua3vmOkNIUptYf0bdI"
+              },
+              body: JSON.stringify(formData)
+          })
+              .then(response => {
+                  if (response.ok) {
+                      console.log("Form successfully submitted");
+                      setIsSubmited(true);
+                      setIsDirty(false);
+                  } else {
+                      throw new Error('Ошибка при отправке данных на сервер');
+                  }
+              })
+              .catch((error) => alert(error));
+      }
   }
 
   useEffect(() => {
